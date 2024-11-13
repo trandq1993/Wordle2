@@ -1,0 +1,86 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.App {
+    text-align: center;
+}
+
+.word-grid {
+    margin: 20px 0;
+}
+
+.word-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.message {
+    position: fixed; /* Keeps the message at the bottom */
+    bottom: 20px; /* Space from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* White text */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 100; /* Ensure it appears above other elements */
+}
+.guess-indicator {
+    margin-top: 20px;
+    font-size: 24px; /* Change the font size as needed */
+}
+
+.guess-letter {
+    margin: 0 5px; /* Add some space between letters */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 4px; /* Optional border radius */
+    display: inline-block; /* Ensures it takes up only as much space as needed */
+    width: 30px; /* Fixed width for consistency */
+    text-align: center; /* Center text */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.word-letter {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    color: black;
+}
+.word-letter-current {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    background-color: grey;
+}
+
+.word-letter.correct {
+    background-color: green;
+}
+
+.word-letter.present {
+    background-color: yellow;
+}
+
+.word-letter.absent {
+    background-color: grey;
+}

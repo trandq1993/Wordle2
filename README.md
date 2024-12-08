@@ -1,0 +1,1 @@
+This is a wordle app that is Authored by Duke Tran and Andrea Arrivillaga.  This application is coded in react and uses Neural Netowrks and Naive Bayes to guess the next word that the user should select.  This also have a simulation component that you can simulate the machine learning model in the react application.
